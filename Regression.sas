@@ -68,8 +68,4 @@ model sales=population;
 output out=regdata2 p=predict residual=resid rstudent=delresid lcl=lowercl ucl=uppercl;
 proc print data=restaurant2;
 run;
-proc reg data=restaurant2;
-model sales=population;
-output out=regdata2 p=predict residual=resid rstudent=delresid lcl=lowercl ucl=uppercl;
-proc print data=regdata2;
-run;
+
